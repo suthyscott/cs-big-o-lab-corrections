@@ -12,10 +12,10 @@ function printNumbers(numbers) {
   }
   
 // Q: Given an array of numbers, what is the time complexity of this function?
-// ANSWER: O(n)
+// Original Answer: O(n)
 
 // Q: What is the space complexity?
-// ORIGINAL ANSWER: O(n)
+// Original Answer: O(n)
 
 /* 
 Corrected answer: O(1) 
@@ -48,10 +48,10 @@ function findFourth(numbers) {
   }
 
 // Q: What is the time complexity of of this solution?
-// ANSWER: O(1)
+// Original Answer: O(1)
 
 // Q: Given an array of numbers, what is the space complexity of this function?
-// ORIGINAL ANSWER: O(n)
+// Original Answer: O(n)
 
 /* 
 Corrected answer: O(1) 
@@ -60,7 +60,7 @@ Array parameters don't take up additional memory space, so the only pieces of da
 */
 
 // Q: Could you come up with a solution that has a better time complexity? If so, write out that solution and note the time complexity. If not, why not?
-// ANSWER: No. While a for-loop is typically O(n), this code used inside this for-loop prevents it from exceeding past 4 run-throughs.
+// Original Answer: No. While a for-loop is typically O(n), this code used inside this for-loop prevents it from exceeding past 4 run-throughs.
 
 
 // 3) -------------------------------------------------------
@@ -70,10 +70,10 @@ function printA() {
     }
 }
 // Q: What is the time complexity of this function?
-// ANSWER: O(1)
+// Answer: O(1)
 
 // Q: What is the space complexity of this function?
-// ANSWER: O(1)
+// Answer: O(1)
 
 // 4) -------------------------------------------------------
 function printB(number) {
@@ -82,10 +82,10 @@ function printB(number) {
   }
 }
 // Q: What is the time complexity of this function?
-// ANSWER: O(n)
+// Original Answer: O(n)
 
 // Q: What is the space complexity of this function?
-// ANSWER: O(n)
+// Original Answer: O(n)
 
 /* 
 Corrected answer: O(1)
@@ -104,10 +104,10 @@ function printC(num, arr) {
   }
 }
 // Q: What is the time complexity of this function?
-// ANSWER: O(n^2)
+// Original Answer: O(n^2)
 
 // Q: What is the space complexity of this function?
-// ANSWER: O(n^2)
+// Original Answer: O(n^2)
 
 /* 
 Corrected answer: O(1)
@@ -125,10 +125,10 @@ function nested(numbers) {
     }
   }
 // Q: What is the time complexity of this function?
-// ANSWER: O(n^2)
+// Original Answer: O(n^2)
 
 // Q: What is the space complexity of this function?
-// ANSWER: O(n^2)
+// Original Answer: O(n^2)
 
 /* 
 Corrected answer: O(1)
@@ -145,13 +145,13 @@ let newNumbersA = numbers.filter((num) => {
   return num < 5
 })
 // Q: What is the time complexity of the filter higher-order function?
-// ANSWER: O(n)
+// Original Answer: O(n)
 
 // Q: What is the space complexity of the filter higher-order function?
-// ANSWER: O(n)
+// Original Answer: O(n)
 
 /* 
-Corrected answer: also O(n), because even though the filter method's callback doesn't use additional space, filter always creates new array, and it's length will depend on the result of .filter. 
+The original answer O(n) is correct, because even though the filter method's callback doesn't use additional space, filter always creates new array, and it's length will depend on the result of .filter. 
 */
 
 
@@ -161,15 +161,13 @@ let newNumbersB = numbers.map((num) => {
   return num * 3
 })
 // Q: What is the time complexity of the map higher-order function?
-// ANSWER: O(n)
+// Original Answer: O(n)
 
 // Q: What is the space complexity of the map higher-order function?
-// ANSWER: O(n)
+// Original Answer: O(n)
 
 /* 
-Corrected Answer: O(n)
-
-Because .map always creates a new array. 
+The original answer O(n) is correct because .map always creates a new array. Same logic as previous problem
 */
 
 
@@ -185,7 +183,7 @@ function removeNum() {
     numbers.splice(3,1)
 }
 // Q: What is the time complexity of the function?
-// ANSWER: O(n)
+// Original Answer: O(n)
 
 
 // 10) -------------------------------------------------------
@@ -193,7 +191,7 @@ function insertNum() {
     numbers.splice(3, 0, 19)
 }
 // Q: What is the time complexity of the function?
-// ANSWER: O(n)
+// Answer: O(n)
 
 
 // 11) -------------------------------------------------------
@@ -201,7 +199,7 @@ function pushNum() {
     numbers.push(25)
 }
 // Q: What is the time complexity of the function?
-// ANSWER: O(1)
+// Answer: O(1)
 
 
 // 12) -------------------------------------------------------
@@ -212,7 +210,7 @@ function printFirstTwoNames(array) {
 }
 
 // Q: What is the time complexity of the function? 
-// ANSWER: O(1)
+// Answer: O(1)
 
 
 
@@ -239,7 +237,7 @@ function arrInception(parentArr) {
   }
 
 // Q: What is the space complexity of this function?
-// ANSWER: O(n)
+// Original Answer: O(n)
 
 /* 
 Corrected Answer: O(1)
@@ -263,17 +261,15 @@ function getNumbersSquared(numbers) {
 }
 
 // Q: What is the space complexity of this function?
-// ANSWER: O(n)
+// Original Answer: O(n)
 
 /* 
-Corrected answer: also O(n)
-
-Because in this case, we are actually creating two new arrays. The length of both of those arrays will be determined by the length of the numbers parameter. 
+The original answer O(n) is correct, because in this case, we are actually creating two new arrays (numbers2 and answers). The length of both of those arrays will be determined by the length of the numbers parameter. 
 */
 
 
 // Q: Is it possible to improve this function's space complexity? If it is, write a new function below.
-// ANSWER:
+// Answer:
 
 
 // 15) Here are two functions that you came up with to count how many of each letter is in a given string and return an object with the individual counts: 
@@ -338,19 +334,19 @@ function countLettersRoundTwo(str) {
 
 
 // Q: Do these functions have the same space complexity?
-// ANSWER: yes
+// Original Answer: yes
 
 
 // Q: What is the space complexity of each? 
-// ANSWER - countLetters: O(n)
-// ANSWER - countLettersRoundTwo: O(n)
+// Original Answer - countLetters: O(n)
+// Original Answer - countLettersRoundTwo: O(n)
 
 /* 
-Corrected answer: O(n)
+The original answer O(n) is correct.
 
 Both functions create new arrays when splitting the strings, whose size is determined by the length of the string. 
 */
 
 
 // Q: Explain how you came to your conclusions about the space complexity of each function. 
-// ANSWER: Each function is dependent on the size of the string
+// Original Answer: Each function is dependent on the size of the string
