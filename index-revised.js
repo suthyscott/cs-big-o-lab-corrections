@@ -348,7 +348,7 @@ function countLettersRoundTwo(str) {
 /* 
 Corrected answer: O(n)
 
-Both functions also create new arrays when splitting the strings, whose size is determined by the length of the string. 
+Both functions create new arrays when splitting the strings, whose size is determined by the length of the string. 
 */
 
 
