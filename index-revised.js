@@ -18,10 +18,10 @@ function printNumbers(numbers) {
 // ORIGINAL ANSWER: O(n)
 
 /* 
-Scott's answer: O(1) 
+Corrected answer: O(1) 
 
 Because the numbers parameter is just a reference to the array, no additional memory is being taken up by receiving it as a param.
--------for the rest of these problems, it will be an unspoken assertion that parameters do not take up memory space------
+-------for the rest of these problems, remember that parameters do not take up memory space------
 
 So aside from the function declaration, the only thing that's actually using space in this function is declaring i as the iterator variable.
 
@@ -52,10 +52,11 @@ function findFourth(numbers) {
 
 // Q: Given an array of numbers, what is the space complexity of this function?
 // ORIGINAL ANSWER: O(n)
-/* 
-Scott's answer: O(1) 
 
-The only pieces of data in this function that are actually using memory space are count, answer, and i. Since those are all numbers that take up 4 bytes, this is constant. 
+/* 
+Corrected answer: O(1) 
+
+Array parameters don't take up additional memory space, so the only pieces of data in this function that are actually using memory space are count, answer, and i. Since those are all numbers that take up 4 bytes, this is constant. 
 */
 
 // Q: Could you come up with a solution that has a better time complexity? If so, write out that solution and note the time complexity. If not, why not?
@@ -87,7 +88,7 @@ function printB(number) {
 // ANSWER: O(n)
 
 /* 
-Scott's answer: O(1)
+Corrected answer: O(1)
 
 Array parameters don't take up additional memory space, and i is the only variable. 
 */
@@ -109,7 +110,7 @@ function printC(num, arr) {
 // ANSWER: O(n^2)
 
 /* 
-Scott's answer: O(1)
+Corrected answer: O(1)
 
 Array parameters don't take up additional memory space, and i and j are the only variables. 
 */
@@ -130,7 +131,7 @@ function nested(numbers) {
 // ANSWER: O(n^2)
 
 /* 
-Scott's answer: O(1)
+Corrected answer: O(1)
 
 Array parameters don't take up additional memory space, and i and j are the only variables. 
 */
@@ -150,7 +151,7 @@ let newNumbersA = numbers.filter((num) => {
 // ANSWER: O(n)
 
 /* 
-Scott's answer: also O(n), because even though the filter method's callback doesn't use additional space, filter always creates new array, and it's length will depend on the result of .filter. 
+Corrected answer: also O(n), because even though the filter method's callback doesn't use additional space, filter always creates new array, and it's length will depend on the result of .filter. 
 */
 
 
@@ -166,7 +167,7 @@ let newNumbersB = numbers.map((num) => {
 // ANSWER: O(n)
 
 /* 
-Scott's Answer: O(n)
+Corrected Answer: O(n)
 
 Because .map always creates a new array. 
 */
@@ -241,7 +242,7 @@ function arrInception(parentArr) {
 // ANSWER: O(n)
 
 /* 
-Scott's Answer: O(1)
+Corrected Answer: O(1)
 
 Array parameters don't take additional space. i and j are just number variables. childArr is just creating another pointer to the arrays stored inside of parentArr. The space taken up by these child arrays doesn't increased, there's just another reference that points to them inside of the parentArr. 
 */
@@ -265,7 +266,7 @@ function getNumbersSquared(numbers) {
 // ANSWER: O(n)
 
 /* 
-Scott's answer: also O(n)
+Corrected answer: also O(n)
 
 Because in this case, we are actually creating two new arrays. The length of both of those arrays will be determined by the length of the numbers parameter. 
 */
@@ -345,9 +346,9 @@ function countLettersRoundTwo(str) {
 // ANSWER - countLettersRoundTwo: O(n)
 
 /* 
-Scott's answer: O(n)
+Corrected answer: O(n)
 
-Because a string parameter does take up its own space, and the amount of space will be determined by how long the str is. Both functions also create new arrays when splitting the strings, whose size is determined by the length of the string. 
+Both functions also create new arrays when splitting the strings, whose size is determined by the length of the string. 
 */
 
 
